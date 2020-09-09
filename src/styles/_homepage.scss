@@ -1,0 +1,25 @@
+@import "./variables";
+
+.Domu {
+    padding-bottom: 300px;
+    .articles {
+        width: 60%;
+        margin: auto;
+        .articleWrapper {
+            margin: 20px 0;
+            background-color: $form-color;
+            display: flex;
+            p {
+                margin-top: 7px;
+                font-size: 1.6em;
+            }
+            img {
+                width: 20%;
+                max-width: 200px;
+                border-radius: 4px;
+                display: block;
+                padding: 7px;
+            }
+        }
+    }
+}

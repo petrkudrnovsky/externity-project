@@ -1,0 +1,195 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap");
+/* general css */
+* {
+  margin: none;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  padding: none;
+}
+
+body {
+  font-family: 'Roboto', sans-serif;
+}
+
+#root {
+  background-color: whitesmoke;
+  min-height: 100vh;
+  position: relative;
+}
+
+.Domu {
+  padding-bottom: 300px;
+}
+
+.Domu .articles {
+  width: 60%;
+  margin: auto;
+}
+
+.Domu .articles .articleWrapper {
+  margin: 20px 0;
+  background-color: #d6d6d6;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.Domu .articles .articleWrapper p {
+  margin-top: 7px;
+  font-size: 1.6em;
+}
+
+.Domu .articles .articleWrapper img {
+  width: 20%;
+  max-width: 200px;
+  border-radius: 4px;
+  display: block;
+  padding: 7px;
+}
+
+nav {
+  background: whitesmoke;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 20px 25px;
+}
+
+nav .contact {
+  display: inline-block;
+  background-color: #2896d6;
+  padding: 10px 20px;
+  font-size: 1.2em;
+  color: whitesmoke;
+  border-radius: 2.5px;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+}
+
+nav .contact:hover {
+  background-color: #2082bb;
+}
+
+.Kontakt {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  padding-bottom: 300px;
+}
+
+.Kontakt p {
+  font-size: 1.3em;
+}
+
+.Kontakt p .blue-clr {
+  color: #2896d6;
+}
+
+.Kontakt form {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  background-color: #d6d6d6;
+  padding: 20px 30px;
+  border: 1px solid black;
+  border-radius: 2.5px;
+}
+
+.Kontakt form label {
+  margin: 10px 0;
+}
+
+.Kontakt form label input {
+  margin-left: 10px;
+  width: 200px;
+  font-family: "Roboto", sans-serif;
+}
+
+.Kontakt form textarea {
+  width: 250px;
+  height: 90px;
+  font-family: "Roboto", sans-serif;
+}
+
+.Kontakt form input[type="submit"] {
+  margin-top: 25px;
+  font-family: "Roboto", sans-serif;
+  padding: 7px 14px;
+  background-color: #2896d6;
+  border: none;
+  font-size: 1em;
+  color: whitesmoke;
+  border-radius: 2.5px;
+  cursor: pointer;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+}
+
+.Kontakt form input[type="submit"]:hover {
+  background-color: #2082bb;
+}
+
+footer {
+  margin-top: 50px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: flex-end;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  background-color: #9bd1eb;
+  height: 250px;
+  padding-right: 30px;
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+}
+
+footer .contact {
+  display: inline-block;
+  background-color: #2896d6;
+  padding: 10px 20px;
+  font-size: 1.2em;
+  color: whitesmoke;
+  border-radius: 2.5px;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+}
+
+footer .contact:hover {
+  background-color: #2082bb;
+}
+/*# sourceMappingURL=style.css.map */

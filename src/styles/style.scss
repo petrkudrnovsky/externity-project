@@ -1,0 +1,24 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
+@import "./variables";
+
+/* general css */
+* {
+    margin: none;
+    box-sizing: border-box;
+    padding: none;
+  }
+  body {
+    font-family: 'Roboto', sans-serif;  
+  }
+  #root {
+    background-color: $bg-color;
+    min-height: 100vh;
+    position: relative;
+  }
+
+@import "./homepage";
+@import "./nav"; //navigation styles
+@import "./contact"; //contact form styles
+@import "./footer"; //footer styles
+  
+
