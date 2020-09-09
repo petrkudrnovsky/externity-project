@@ -13,7 +13,7 @@ export const articles = [
   },
   {
     "id": "3",
-    "title": "Chřestový týden",
+    "title": "ZChřestový týden",
     "thumb_image": require("./03.jpg"),
     "content": "Morbi id lacus in libero malesuada scelerisque at a justo. Sed aliquet rutrum molestie. Proin venenatis, ex sit amet placerat auctor, mauris magna hendrerit nibh, a molestie ante arcu at lacus. Vivamus sit amet imperdiet turpis. Aliquam tristique, magna ut vulputate pulvinar, mi est porta elit, sodales vestibulum mauris purus eget ante. Mauris id purus sed lectus efficitur maximus placerat at erat."
   }

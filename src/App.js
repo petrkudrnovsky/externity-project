@@ -14,7 +14,6 @@ function App() {
       <div className="App">
       <Nav />
       <Switch>
-        <Domu />
         <Route path="/" exact component={Domu} />
         <Route path="/blog" component={Detail} />
         <Route path="/kontakt" exact component={Kontakt} />
