@@ -1,5 +1,6 @@
 import React from "react";
 import "./styles/style.css";
+import {Link} from "react-router-dom";
 
 function Kontakt() {
   class KontaktForm extends React.Component {
@@ -39,7 +40,7 @@ function Kontakt() {
           <label>Jméno:
             <input type="text" value={this.state.name} name="name" onChange={this.handleChange} placeholder="Zadejte své jméno" required />
           </label>
-          <label>E-mail:
+          <label>E-mail: &nbsp;
             <input type="email" value={this.state.email} name="email" onChange={this.handleChange} placeholder="Zadejte svůj e-mail" required />
           </label>
           <label>Váš dotaz:</label>
@@ -50,9 +51,12 @@ function Kontakt() {
     }
   };
   return (
-    <div className="Kontakt">
-      <p>Máte na nás otázku? <span className="blue-clr">Kontaktujte nás:</span></p>
-      <KontaktForm />
+    <div className="Kontakt-wrapper">
+      <Link to="/" style={{textDecoration: "none"}}><span className="goBackBtn">&lt;&lt;&lt;</span></Link>
+      <div className="Kontakt">
+        <p>Máte na nás otázku? <span className="blue-clr">Kontaktujte nás:</span></p>
+        <KontaktForm />
+      </div>
     </div>
   );
 }

@@ -7,11 +7,17 @@
         margin: auto;
         .articleWrapper {
             margin: 20px 0;
+            width: 100%;
             background-color: $form-color;
             display: flex;
+            border-radius: 4px;
+            &:hover {
+                background-color: $form-color-darker;
+            }
             p {
-                margin-top: 7px;
+                margin: 7px 7px 7px 0;
                 font-size: 1.6em;
+                color: black;
             }
             img {
                 width: 20%;
@@ -21,5 +27,42 @@
                 padding: 7px;
             }
         }
+    }
+}
+
+@media screen and (max-width: 900px) {
+    .articles {
+        width: 80% !important;
+        margin: auto;
+    }
+}
+
+@media screen and (max-width: 750px) {
+    img {
+        min-width: 90px;
+    }
+}
+
+@media screen and (max-width: 620px) {
+    p {
+        font-size: 1.4em !important;
+    }
+}
+
+@media screen and (max-width: 408px) {
+    p {
+        font-size: 1.2em !important;
+    }
+}
+
+@media screen and (max-width: 290px) {
+    p {
+        font-size: 1em !important;
+    }
+}
+
+@media screen and (max-width: 258px) {
+    p {
+        font-size: 0.9em !important;
     }
 }

@@ -28,15 +28,22 @@ body {
 
 .Domu .articles .articleWrapper {
   margin: 20px 0;
+  width: 100%;
   background-color: #d6d6d6;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  border-radius: 4px;
+}
+
+.Domu .articles .articleWrapper:hover {
+  background-color: #a1a1a1;
 }
 
 .Domu .articles .articleWrapper p {
-  margin-top: 7px;
+  margin: 7px 7px 7px 0;
   font-size: 1.6em;
+  color: black;
 }
 
 .Domu .articles .articleWrapper img {
@@ -45,6 +52,132 @@ body {
   border-radius: 4px;
   display: block;
   padding: 7px;
+}
+
+@media screen and (max-width: 900px) {
+  .articles {
+    width: 80% !important;
+    margin: auto;
+  }
+}
+
+@media screen and (max-width: 750px) {
+  img {
+    min-width: 90px;
+  }
+}
+
+@media screen and (max-width: 620px) {
+  p {
+    font-size: 1.4em !important;
+  }
+}
+
+@media screen and (max-width: 408px) {
+  p {
+    font-size: 1.2em !important;
+  }
+}
+
+@media screen and (max-width: 290px) {
+  p {
+    font-size: 1em !important;
+  }
+}
+
+@media screen and (max-width: 258px) {
+  p {
+    font-size: 0.9em !important;
+  }
+}
+
+.goBackBtn {
+  color: #2082bb;
+  padding-left: 25px;
+  font-size: 1.2em;
+}
+
+.goBackBtn:hover {
+  font-weight: 600;
+}
+
+.article {
+  padding-bottom: 300px;
+}
+
+.article .whole-article {
+  width: 60%;
+  margin: auto;
+}
+
+.article .whole-article .article-heading {
+  height: 300px;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: 100%;
+  border-radius: 5px;
+}
+
+.article .whole-article .article-heading h1 {
+  height: 300px;
+  color: white;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: flex-end;
+  font-size: 3em;
+  padding-bottom: 30px;
+  text-align: center;
+}
+
+.article .whole-article .article-content {
+  padding: 15px;
+  line-height: 25px;
+}
+
+@media screen and (max-width: 840px) {
+  .whole-article {
+    width: 80% !important;
+  }
+}
+
+@media screen and (max-width: 570px) {
+  .article-heading {
+    height: 200px !important;
+  }
+  .article-heading h1 {
+    height: 200px !important;
+    font-size: 2.5em !important;
+  }
+}
+
+@media screen and (max-width: 380px) {
+  .article-heading {
+    height: 100px !important;
+  }
+  .article-heading h1 {
+    height: 100px !important;
+    font-size: 2em !important;
+    -webkit-box-align: center !important;
+        -ms-flex-align: center !important;
+            align-items: center !important;
+    padding-bottom: 0 !important;
+  }
+}
+
+@media screen and (max-width: 310px) {
+  .article-heading {
+    height: 100px !important;
+  }
+  .article-heading h1 {
+    height: 100px !important;
+    font-size: 1.8em !important;
+  }
 }
 
 nav {
@@ -74,6 +207,28 @@ nav .contact {
 
 nav .contact:hover {
   background-color: #2082bb;
+}
+
+@media (max-width: 380px) {
+  nav {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  nav .contact {
+    margin-top: 5px;
+  }
+}
+
+.Kontakt-wrapper .goBackBtn {
+  color: #2082bb;
+  padding-left: 25px;
+  font-size: 1.2em;
+}
+
+.Kontakt-wrapper .goBackBtn:hover {
+  font-weight: 600;
 }
 
 .Kontakt {
@@ -123,6 +278,12 @@ nav .contact:hover {
 
 .Kontakt form label {
   margin: 10px 0;
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
 }
 
 .Kontakt form label input {
@@ -132,7 +293,7 @@ nav .contact:hover {
 }
 
 .Kontakt form textarea {
-  width: 250px;
+  width: 100%;
   height: 90px;
   font-family: "Roboto", sans-serif;
 }
@@ -153,6 +314,31 @@ nav .contact:hover {
 
 .Kontakt form input[type="submit"]:hover {
   background-color: #2082bb;
+}
+
+@media (max-width: 380px) {
+  .goBackBtn {
+    display: none;
+  }
+  .Kontakt p {
+    text-align: center;
+    padding: 0 18px;
+  }
+  .Kontakt form {
+    width: 80%;
+    margin: 20px;
+    padding: 10px 20px;
+  }
+  .Kontakt form label {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .Kontakt form label input {
+    margin-left: 0;
+    width: 100%;
+  }
 }
 
 footer {
@@ -191,5 +377,14 @@ footer .contact {
 
 footer .contact:hover {
   background-color: #2082bb;
+}
+
+@media (max-width: 380px) {
+  footer {
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    padding-right: 0;
+  }
 }
 /*# sourceMappingURL=style.css.map */

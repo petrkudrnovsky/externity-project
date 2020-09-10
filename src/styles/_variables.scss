@@ -2,3 +2,26 @@ $bg-color: rgb(245, 245, 245);
 $btn-color: rgb(40, 150, 214);
 $btn-color-hover: rgb(32, 130, 187);
 $form-color: rgb(214, 214, 214);
+$form-color-darker: rgb(161, 161, 161);
+
+@mixin kontakt-btn {
+    display: inline-block;
+    background-color: $btn-color;
+    padding: 10px 20px;
+    font-size: 1.2em;
+    color: $bg-color;
+    border-radius: 2.5px;
+    transition: 0.3s;
+    &:hover {
+        background-color: $btn-color-hover;
+    }
+}
+
+@mixin goBackBtn {
+    color: $btn-color-hover;
+    padding-left: 25px;
+    font-size: 1.2em;
+    &:hover {
+        font-weight: 600;
+    }
+}

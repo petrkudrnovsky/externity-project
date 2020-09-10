@@ -9,8 +9,7 @@ function Domu() {
     constructor(props) {
       super(props);
       this.state = {
-        url: "",
-        test: "hello"
+        article: ""
       };
     };
     
@@ -29,17 +28,17 @@ function Domu() {
           .map((data) => {
             let urlMaker = (url) => {
               let arr = url.toLowerCase()
-                .normalize("NFD") //normalizace stringu podle NFD (NFC-default nechává čárky)
+                .normalize("NFD") //normalizace stringu podle NFD (NFC-default, nechává čárky)
                 .replace(/[\u0300-\u036f]/g, "") //regex class pro matching U+0300 -> U+036F
                 .split(" ")
                 .join("-");
               return arr;
             };
             return(
-              <Link to={"/blog/"+urlMaker(data.title)}>
+              <Link to={"/blog/"+urlMaker(data.title)} style={{textDecoration: "none"}}>
               <div className="articleWrapper">
                 <img src={data.thumb_image} alt=" " />
-                <p>{data.title}</p>
+                <p>{data.title}</p>                
               </div>
               </Link>
             )

@@ -13,15 +13,13 @@ footer {
     bottom: 0;
     width: 100%;
     .contact {
-        display: inline-block;
-        background-color: $btn-color;
-        padding: 10px 20px;
-        font-size: 1.2em;
-        color: $bg-color;
-        border-radius: 2.5px;
-        transition: 0.3s;
-        &:hover {
-            background-color: $btn-color-hover;
-        }
+        @include kontakt-btn;
+    }
+}
+
+@media (max-width: 380px) {
+    footer {
+        align-items: center;
+        padding-right: 0;
     }
 }

@@ -15,6 +15,7 @@ function App() {
       <Nav />
       <Switch>
         <Route path="/" exact component={Domu} />
+        <Route path="/externity-project" exact component={Domu} /> {/* kvuli tomu, ze se na zacatku spusti s "extenity-project" url - tak aby byla videt hlavni stranka */}
         <Route path="/blog" component={Detail} />
         <Route path="/kontakt" exact component={Kontakt} />
       </Switch>
